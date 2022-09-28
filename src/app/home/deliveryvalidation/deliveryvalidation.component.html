@@ -1,0 +1,38 @@
+<mat-tab-group [selectedIndex]="4" >
+  <mat-tab label="Project Info"> Content 1 </mat-tab>
+  <mat-tab label="Project Scope"> Content 2 </mat-tab>
+  <mat-tab label="Project Delivery Guide"> Content 3 </mat-tab>
+  <mat-tab label="Project Delivery Validation"> 
+    <!-- Basic Bootstrap Table -->
+    <div class="card">
+      <div class="table-responsive text-wrap">
+        <table class="table">
+          <thead class="thead-light headtext">
+            <tr>
+              <th>Career Area</th>
+              <th>UserName</th>
+              <th>Validation Description</th>
+              <th>Sample Files</th>
+              <th>Status</th>
+              <th>Evidence File</th>
+              <th>Evidence Video</th>
+            </tr>
+          </thead>
+          <tbody class="table-border-bottom-0">
+            <tr *ngFor="let deliveryvalidation of deliveryvalidations">
+                <td>{{deliveryvalidation.career_Area}}</td>
+                <td>{{deliveryvalidation.userName}}</td>
+                <td>{{deliveryvalidation.validation_Description}}</td>
+                <td><a href="#">{{deliveryvalidation.sample_File}}</a> </td>
+                <td>{{deliveryvalidation.status}}</td>
+                <td>{{deliveryvalidation.evidence_File}}</td>
+                <td>{{deliveryvalidation.evidence_Video}}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </mat-tab>
+</mat-tab-group>
+
+
