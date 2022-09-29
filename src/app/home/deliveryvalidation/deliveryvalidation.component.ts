@@ -12,6 +12,8 @@ export class DeliveryvalidationComponent implements OnInit {
   constructor(public _deliveryvalidationService: DeliveryvalidationService) { }
 
   deliveryvalidations:DeliveryValidation[] = [];
+  show:boolean = true;
+  toggle:any = {};
 
   ngOnInit(): void {
     this.getalldeliveryValidation();
@@ -24,6 +26,10 @@ export class DeliveryvalidationComponent implements OnInit {
     err => {
       console.log('API Error ' +err);
     });
+  }
+
+  showhidden(id:any){
+    this.show = false;
   }
 
 }

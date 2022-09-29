@@ -16,17 +16,23 @@
               <th>Status</th>
               <th>Evidence File</th>
               <th>Evidence Video</th>
+              <th>&nbsp;</th>
             </tr>
           </thead>
           <tbody class="table-border-bottom-0">
-            <tr *ngFor="let deliveryvalidation of deliveryvalidations">
-                <td>{{deliveryvalidation.career_Area}}</td>
+            <tr *ngFor="let deliveryvalidation of deliveryvalidations; let i = index">
+                <td style="max-width: 200px;">{{deliveryvalidation.career_Area}}</td>
                 <td>{{deliveryvalidation.userName}}</td>
-                <td>{{deliveryvalidation.validation_Description}}</td>
-                <td><a href="#">{{deliveryvalidation.sample_File}}</a> </td>
-                <td>{{deliveryvalidation.status}}</td>
-                <td>{{deliveryvalidation.evidence_File}}</td>
-                <td>{{deliveryvalidation.evidence_Video}}</td>
+                <td style="max-width: 300px;">{{deliveryvalidation.validation_Description}}</td>
+                <td><a href="#"><i class="fa fa-download" aria-hidden="true"> </i> &nbsp; <u>{{deliveryvalidation.sample_File}} </u></a></td>
+                <td><div style="color: red;background-color: #ffcccb;padding: 2px;border-radius: 5px;">{{deliveryvalidation.status}}</div></td>
+                <td><a href="#"><i class="fa fa-upload" aria-hidden="true"> </i> &nbsp; <u>{{deliveryvalidation.evidence_File}}</u></a> </td>
+                <td><a href="#"><i class="fa fa-upload" aria-hidden="true"> </i> &nbsp; <u>{{deliveryvalidation.evidence_Video}}</u></a> </td>
+                <td>
+                  <div (click)="toggle[i] = !toggle[i]">
+                    <i class="fa fa-3x" [ngClass]="toggle[i] ? 'fa-chevron-circle-down': 'fa-chevron-circle-right'" aria-hidden="true"></i>
+                  </div>
+                </td>
             </tr>
           </tbody>
         </table>
