@@ -159,6 +159,7 @@ UpgradeLog*.htm
  
 # svn
 .svn
+.angular/
 
 # CVS - Source Control
 **/CVS/
