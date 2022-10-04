@@ -1,9 +1,13 @@
 img.sidenav {
-  height: 1280px;
-  width: 200px;
+  height: 850px;
+  width: 150px;
+  margin: 0px;
   
 }
 
 img.topnav {
-  width: 1300px;
+  width: 1400px;
+  height: 240px;
+  margin: 0px;
 }
+
