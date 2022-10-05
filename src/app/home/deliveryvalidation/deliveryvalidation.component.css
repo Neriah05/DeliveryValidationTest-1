@@ -1,3 +1,64 @@
 thead tr th {
   text-transform: capitalize;
 }
+
+#resp-table {
+  width: 100%;
+  display: table;
+}
+#resp-table-body{
+  display: table-row-group;
+}
+.resp-table-row{
+  display: table-row;
+}
+.table-body-cell{
+  display: table-cell;
+  /* border: 1px solid #dddddd; */
+  padding: 8px;
+  padding-right: 9px;
+  line-height: 1.42857143;
+  vertical-align: top;
+}
+.resp-table-head{
+  color: #495057;
+  background-color: #e9ecef;
+  border-color: #dee2e6;
+}
+.table-dropdown{
+  background-color: #f4f6f8;
+  border-color: #dadfe4;
+}
+.table-dropdown-down{
+  background-color: #ffffff;
+  border-color: #dadfe4;
+}
+#table-link:hover{
+  text-decoration: none;
+}
+.special-cell{
+  column-span: 8;
+}
+.scrolldiv{
+  overflow-y: scroll;
+  height: 188px;
+}
+/* width */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #555; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(65, 62, 62); 
+}

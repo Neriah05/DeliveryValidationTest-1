@@ -7,8 +7,16 @@
       "validation_Description": "This document contains something that os utmost importance and one shich most be taken perfect care of",
       "sample_File": "Downlaod Sample file",
       "status": "Not Started",
-      "evidence_File": "Upload FIle",
-      "evidence_Video": "Upload VIdeo"
+      "evidence_File": "Upload File",
+      "evidence_Video": "Upload VIdeo",
+      "state":false,
+      "questions":[
+        {"check":"Configure tenant policy changes"},
+        {"check":"Delete Microsoft terms Metting Settings and configuration changes"},
+        {"check":"Create calling plan routing policies for the tenant"},
+        {"check":"Decommission servers that were used for exchange earlier"},
+        {"check":"Decommission servers that were used for exchange earlier"}
+      ]
     },
     {
       "id": 2,
@@ -17,8 +25,16 @@
       "validation_Description": "This document contains something that os utmost importance and one shich most be taken perfect care of",
       "sample_File": "Downlaod Sample file",
       "status": "Not Started",
-      "evidence_File": "Upload FIle",
-      "evidence_Video": "Upload VIdeo"
+      "evidence_File": "Upload File",
+      "evidence_Video": "Upload VIdeo",
+      "state":false,
+      "questions":[
+        {"check":"Configure tenant policy changes"},
+        {"check":"Delete Microsoft terms Metting Settings and configuration changes"},
+        {"check":"Create calling plan routing policies for the tenant"},
+        {"check":"Decommission servers that were used for exchange earlier"},
+        {"check":"Decommission servers that were used for exchange earlier"}
+      ]
     },
     {
       "id": 3,
@@ -27,8 +43,16 @@
       "validation_Description": "This document contains something that os utmost importance and one shich most be taken perfect care of",
       "sample_File": "Downlaod Sample file",
       "status": "Not Started",
-      "evidence_File": "Upload FIle",
-      "evidence_Video": "Upload VIdeo"
+      "evidence_File": "Upload File",
+      "evidence_Video": "Upload VIdeo",
+      "state":false,
+      "questions":[
+        {"check":"Configure tenant policy changes"},
+        {"check":"Delete Microsoft terms Metting Settings and configuration changes"},
+        {"check":"Create calling plan routing policies for the tenant"},
+        {"check":"Decommission servers that were used for exchange earlier"},
+        {"check":"Decommission servers that were used for exchange earlier"}
+      ]
     },
     {
       "id": 4,
@@ -37,8 +61,16 @@
       "validation_Description": "This document contains something that os utmost importance and one shich most be taken perfect care of",
       "sample_File": "Downlaod Sample file",
       "status": "Not Started",
-      "evidence_File": "Upload FIle",
-      "evidence_Video": "Upload VIdeo"
+      "evidence_File": "Upload File",
+      "evidence_Video": "Upload VIdeo",
+      "state":false,
+      "questions":[
+        {"check":"Configure tenant policy changes"},
+        {"check":"Delete Microsoft terms Metting Settings and configuration changes"},
+        {"check":"Create calling plan routing policies for the tenant"},
+        {"check":"Decommission servers that were used for exchange earlier"},
+        {"check":"Decommission servers that were used for exchange earlier"}
+      ]
     },
     {
       "id": 5,
@@ -47,8 +79,16 @@
       "validation_Description": "This document contains something that os utmost importance and one shich most be taken perfect care of",
       "sample_File": "Downlaod Sample file",
       "status": "Not Started",
-      "evidence_File": "Upload FIle",
-      "evidence_Video": "Upload VIdeo"
+      "evidence_File": "Upload File",
+      "evidence_Video": "Upload VIdeo",
+      "state":false,
+      "questions":[
+          {"check":"Configure tenant policy changes"},
+          {"check":"Delete Microsoft terms Metting Settings and configuration changes"},
+          {"check":"Create calling plan routing policies for the tenant"},
+          {"check":"Decommission servers that were used for exchange earlier"},
+          {"check":"Decommission servers that were used for exchange earlier"}
+      ]
     }
   ]
 }

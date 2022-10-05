@@ -7,6 +7,8 @@ export class DeliveryValidation {
   status?:string;
   evidence_File?:File;
   evidence_Video?:File;
+  state?:boolean;
+  questions?:any;
 
 
 
