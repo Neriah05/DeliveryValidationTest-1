@@ -12,8 +12,9 @@ export class DeliveryvalidationComponent implements OnInit {
   constructor(public _deliveryvalidationService: DeliveryvalidationService) { }
 
   deliveryvalidations:DeliveryValidation[] = [];
-  show:boolean = true;
+  hide:boolean = true;
   toggle:any = {};
+  idhide:any='';
 
   ngOnInit(): void {
     this.getalldeliveryValidation();
@@ -28,8 +29,15 @@ export class DeliveryvalidationComponent implements OnInit {
     });
   }
 
-  showhidden(id:any){
-    this.show = false;
+  showhidden(id:number){
+    this.hide = false;
+    //this.idhide = id;
+    if(this.deliveryvalidations[id].state == false){
+      this.deliveryvalidations[id].state = true;
+    }
+    else{
+      this.deliveryvalidations[id].state = false;
+    }
   }
 
 }

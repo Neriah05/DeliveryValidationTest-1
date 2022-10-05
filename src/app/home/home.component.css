@@ -8,7 +8,7 @@ img.sidenav {
 
 img.topnav {
   width: 1490px;
-  height: 245px;
+  max-height: 230px;
   
 }
 
