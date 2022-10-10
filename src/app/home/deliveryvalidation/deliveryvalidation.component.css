@@ -2,6 +2,10 @@ thead tr th {
   text-transform: capitalize;
 }
 
+#side-adjust {
+  padding-left: 12px;
+}
+
 #resp-table {
   width: 100%;
   display: table;
