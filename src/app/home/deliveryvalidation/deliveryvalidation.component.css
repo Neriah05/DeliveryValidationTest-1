@@ -62,3 +62,6 @@ thead tr th {
 ::-webkit-scrollbar-thumb:hover {
   background: rgb(65, 62, 62); 
 }
+.column{
+  padding-top: 20px;
+}
