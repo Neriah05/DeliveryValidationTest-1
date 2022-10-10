@@ -1,37 +1,249 @@
 <div style="padding-left: 20px; max-width: 1150px">
   <mat-tab-group [selectedIndex]="4">
     <mat-tab label="Project Info"> Content 1 </mat-tab>
-    <mat-tab label="Project Scope"> Content 2 </mat-tab>
-    <mat-tab label="Project Delivery Guide">
-      <br />
-      <br />
-      <h4 style="color: black"><b>Project Delivery Guide</b></h4>
-      <p style="color: black; font-weight: 500">
-        Note: Usernames and naming conventions, domain names, certificate names,
-        DNS names, Server names, IP addresses e.t.c must be original,<br />
-        so you are expected to come up with names and Imaginary or real IP
-        addresses where required to deliver this project.
-      </p>
-      <p style="color: black; font-weight: 500">
-        Level 3 projects require that you provide detailed steps on how you
-        achieved each task; in otherwords, your project delivery validation
-        document<br />
-        should be a detailed manual of steps and screenshots showing how you
-        achieved the project - such that anyone can follow the trail to achieve
-        exactly teh same results.<br />
+    <mat-tab label="Project Scope">
+      <div id="side-adjust">
         <br />
-        No Project Delivery steps provided; Level 3 Projects do not include
-        Delivery Guides, you are expected to deliver on your own.<br />
-        If you hit any roadblocks(Which is normal) do some research, seek the
-        assistance of your cohort members and mentors.<br />
+        <br />
+        <h4 style="color: black"><b>Scope</b></h4>
+        <p style="color: black; font-weight: 500">
+          Since Migrating all Communication, messaging, collaboration and
+          content /document management workloads to the Microsoft 365 <br />
+          Cloud platform four months ago, DreamTal corporation has been able to
+          stop the leaks of confidential information that was plaguing <br />
+          the sales team previously. Since the customer started using Microsoft
+          365, Employee productivity has increased by 500% when compared <br />
+          with this time last year – thanks to Microsoft Team. The company has
+          also implemented a streamlined records management and basic
+          information
+          <br />
+          security system using Azure and SharePoint.
+        </p>
+        <p style="color: black; font-weight: 500">
+          The new financial year just started for DreamTal Corporation, and the
+          Company has budgeted some money for expanding the current deployment
+          of
+          <br />
+          Microsoft 365 cloud applications, which includes SharePoint Online,
+          Exchange Online and Microsoft Teams.<br />
+          <br />
+
+          Although, DreamTal has been using these cloud services for almost one
+          year, it was only available to executives and members of the sales
+          team, the <br />
+          new requirement is for Microsoft 365 to be deployed across the entire
+          company by the end of the Q1, in the coming calendar year. <br />
+          <br />
+
+          DreamTal Corporation expects this project to be completed in the next
+          3 weeks.
+        </p>
+        <br />
         <br />
 
-        Level 3 projects require additional steps for validation; you will
-        present your work to a Project reviewer during the review and validation
-        session – <br />
-        where you are expected to walk the reviewer through the steps you took
-        to complete the project.
-      </p>
+        <h4 style="color: black"><b>Existing Infrastructure:</b></h4>
+        <ul style="color: black; font-weight: 500">
+          <li>Microsoft Teams</li>
+          <li>Microsoft Teams</li>
+          <li>Microsoft 365 Groups</li>
+        </ul>
+        <br />
+        <br />
+        <h4 style="color: black; font-weight: 500">
+          <b>Required Solution:</b>
+        </h4>
+        <h4 style="color: black; padding: 0%">Required Solution:</h4>
+        <ol style="color: black; font-weight: 500">
+          <li>
+            Configure Azure Active Directory Groups and members for 5
+            depatments:<br />
+            Central Admin Department:
+          </li>
+        </ol>
+        <ol style="color: black; font-weight: 500">
+          <li>Two members.</li>
+          <li>One group owner</li>
+          <li>Group Type: Microsoft 365</li>
+          <li>Group membership: Assigned</li>
+          <br />
+          Frontline Support Department:
+        </ol>
+        <ol style="color: black; font-weight: 500">
+          <li>Two members.</li>
+          <li>One group owner</li>
+          <li>Group Type: Microsoft 365</li>
+          <li>Group membership: Assigned</li>
+          <br />
+          Facilities Department: 2 Members
+        </ol>
+        <ol style="color: black; font-weight: 500">
+          <li>Two members.</li>
+          <li>Group Type: Microsoft 365</li>
+          <li>Group membership: Assigned</li>
+          <br />
+          Finance and Accounting Department: 2 Members
+        </ol>
+        <ol style="color: black; font-weight: 500">
+          <li>Two members.</li>
+          <li>One group owner</li>
+          <li>Group Type: Microsoft 365</li>
+        </ol>
+        <br />
+        <p style="color: black; font-weight: 500">
+          Ensure that you add one Member of each group as group Owner, except
+          for the “Facilities department group”.<br />
+          In the Group expiration settings, ensure you specify the “email”
+          address of the main administrator as the “Contact email” in the “Email
+          contact for <br />
+          groups with no owners”<br />
+          Configuring Microsoft Teams for all departments.<br />
+          Create Microsoft Teams from existing groups: Craete a Microsoft Team
+          for each of Department using the Azure groups you already created for
+          <br />
+          each team – except for “Human resources” group. Meaning, you should
+          create the Team from the “Microsoft 365 Admin Center” page – <br />
+          under Active groups, not from the “Teams Admin Center” page.<br />
+          Create Microsoft Teams from scratch: Create the Team for the “Human
+          resources” department from the Teams Admin center.<br />
+          Configuring Microsoft Teams Meeting Policies:<br />
+          Central Admin Department: Meeting Policy for this group will must
+          ensure the following:<br />
+          Allow Transcription<br />
+          Allow Cloud Recording<br />
+          Allow Private meetings<br />
+          Allow channel Meeting scheduling.<br />
+          Note: You should assign this meeting policy to the “Central Admin
+          group” not to individuals.<br />
+        </p>
+        <p style="color: black; font-weight: 500">
+          Frontline Support Department: Meeting Policy for this group will must
+          ensure the following:<br />
+          Allow Cloud Recording<br />
+          Allow Private meetings<br />
+          Allow channel Meeting scheduling.<br />
+          Note: You should assign this meeting policy to the “frontline support
+          group” not to individuals.<br />
+          <br />
+          Facilities Department: Meeting Policy for this group will must ensure
+          the following:<br />
+          Allow Transcription<br />
+          Allow Cloud Recording<br />
+          Note: You should assign this meeting policy to the “facilities group”
+          not to individuals.<br />
+          <br />
+          Finance and Accounting Department: Meeting Policy for this group will
+          must ensure the following:<br />
+          Do not let Anonymous people start a meeting.<br />
+          Ensure that only people in your organization(Dreamtal employees) are
+          automatically admitted into meetings.<br />
+          Disable Live captions.<br />
+          Note: You should assign this meeting policy to the “Finance and
+          Accounting group” not to individuals.<br />
+          <br />
+          Human Resources: Meeting Policy for this group will must ensure the
+          following:<br />
+          Do not let Anonymous people start a meeting.<br />
+          Ensure that only people in your organization(Dreamtal employees) are
+          automatically admitted into meetings.<br />
+          Note: You should assign this meeting policy to the “Human Resources
+          group” not to individuals.<br />
+        </p>
+        <p style="color: black; font-weight: 500">
+          Configuring Sharepoint sites and document repositories for all
+          departments: Create one sharepoint site/ document library for each
+          department.<br />
+          Sharepoint site for each department should be such that can be used to
+          store documents and enable collaboration for Members of the
+          site(department)<br />
+          Assign one member of each department as the “Site owner”, then make
+          the second just a “member”.<br />
+          Configuring sharepoint Sharing and Access control Policies: Configure
+          site sharing policies for site site.<br />
+          Ensure that content of each department’s sharepoint site can only be
+          shared with people in Dreamtal(Organization). <br />
+          Don’t do this globally, do it for each site individually.<br />
+          For Acccess control settings, ensure that full access is allowed for
+          “Unmannged devices” <br />
+          which are devices that are not enrolled to DreamTals device management
+          solution.<br />
+          Configuring sharepoint site settings for DreamTal Tenant:<br />
+          For site settings, ensure that “Default Admin center” is set to the
+          “New sharepoint Admin center”<br />
+          Configuring Microsoft Exchange recipient management(Shared mailbox,
+          Send-As and Send-on-behalf, Equipment Mailboxes)<br />
+          Shared mailbox<br />
+          Create One shared mailbox for the Facilities department, and ensure
+          that all members of the facilities department have access to this
+          mailbox.<br />
+          Create One Quipment mailbox for “DreamTal equipments”<br />
+          Create One Room mailbox for “Human resource conf room”<br />
+          Configuring Microsoft 365 Retention Policies: Create Retention
+          policies for each department with the following settings:<br />
+          Central Admin Department: Assign to the Central admin group.<br />
+          Retain for 7 years<br />
+          Delete items automatically after retention period is over<br />
+          Frontline Support Department: Assign to Teams channels<br />
+          Retain for 5 years<br />
+          Delete items automatically after retention period is over<br />
+          Facilities Department: Assign to shared Mailbox created for this
+          department.<br />
+          Retain for ever<br />
+          Finance and Accounting Department: Assign to Teams channels<br />
+          Retain for ever<br />
+          Human Resources: Assign to Sharepoint site<br />
+          Do not retain, but delete when the content in this repository reach
+          certain age – which should be 7 years<br />
+          Consider deletion based on when it was created.<br />
+          Configure Exchange Admin roles for sub Admins:<br />
+          You need to ensure that members of the Frontline support department
+          are able to “to create, manage, and remove Exchange <br />
+          recipient objects such as mailboxes in the DreamTal exchange Online
+          organization”.<br />
+        </p>
+        <br />
+        <h4 style="color: black; font-weight: 500">Design Requirements:</h4>
+        <h4 style="color: black; font-weight: 500">Not Applicable.</h4>
+        <h4 style="color: black; font-weight: 500">Out for Scope:</h4>
+        <p style="color: black; font-weight: 500">
+          Powershell Automation<br />
+          Advanced Microsoft 365 information security solution.<br />
+          Advanced Teams Voice Solution<br />
+        </p>
+      </div>
+    </mat-tab>
+    <mat-tab label="Project Delivery Guide">
+      <div id="side-adjust">
+        <br />
+        <br />
+        <h4 style="color: black"><b>Project Delivery Guide</b></h4>
+        <p style="color: black; font-weight: 500">
+          Note: Usernames and naming conventions, domain names, certificate
+          names, DNS names, Server names, IP addresses e.t.c must be
+          original,<br />
+          so you are expected to come up with names and Imaginary or real IP
+          addresses where required to deliver this project.
+        </p>
+        <p style="color: black; font-weight: 500">
+          Level 3 projects require that you provide detailed steps on how you
+          achieved each task; in otherwords, your project delivery validation
+          document<br />
+          should be a detailed manual of steps and screenshots showing how you
+          achieved the project - such that anyone can follow the trail to
+          achieve exactly teh same results.<br />
+          <br />
+          No Project Delivery steps provided; Level 3 Projects do not include
+          Delivery Guides, you are expected to deliver on your own.<br />
+          If you hit any roadblocks(Which is normal) do some research, seek the
+          assistance of your cohort members and mentors.<br />
+          <br />
+
+          Level 3 projects require additional steps for validation; you will
+          present your work to a Project reviewer during the review and
+          validation session – <br />
+          where you are expected to walk the reviewer through the steps you took
+          to complete the project.
+        </p>
+      </div>
     </mat-tab>
 
     <mat-tab label="Project Delivery Validation">
