@@ -1,11 +1,42 @@
-<div style="padding-left: 20px;max-width: 1150px;">
-  <mat-tab-group [selectedIndex]="4" >
+<div style="padding-left: 20px; max-width: 1150px">
+  <mat-tab-group [selectedIndex]="4">
     <mat-tab label="Project Info"> Content 1 </mat-tab>
     <mat-tab label="Project Scope"> Content 2 </mat-tab>
-    <mat-tab label="Project Delivery Guide"> Content 3 </mat-tab>
-    <mat-tab label="Project Delivery Validation"> 
+    <mat-tab label="Project Delivery Guide">
+      <br />
+      <br />
+      <h4 style="color: black"><b>Project Delivery Guide</b></h4>
+      <p style="color: black; font-weight: 500">
+        Note: Usernames and naming conventions, domain names, certificate names,
+        DNS names, Server names, IP addresses e.t.c must be original,<br />
+        so you are expected to come up with names and Imaginary or real IP
+        addresses where required to deliver this project.
+      </p>
+      <p style="color: black; font-weight: 500">
+        Level 3 projects require that you provide detailed steps on how you
+        achieved each task; in otherwords, your project delivery validation
+        document<br />
+        should be a detailed manual of steps and screenshots showing how you
+        achieved the project - such that anyone can follow the trail to achieve
+        exactly teh same results.<br />
+        <br />
+        No Project Delivery steps provided; Level 3 Projects do not include
+        Delivery Guides, you are expected to deliver on your own.<br />
+        If you hit any roadblocks(Which is normal) do some research, seek the
+        assistance of your cohort members and mentors.<br />
+        <br />
+
+        Level 3 projects require additional steps for validation; you will
+        present your work to a Project reviewer during the review and validation
+        session – <br />
+        where you are expected to walk the reviewer through the steps you took
+        to complete the project.
+      </p>
+    </mat-tab>
+
+    <mat-tab label="Project Delivery Validation">
       <!-- Basic Bootstrap Table -->
-      <div class="card" style="border: none;">
+      <div class="card" style="border: none">
         <div class="table-responsive text-wrap">
           <table class="table">
             <thead class="thead-light headtext">
@@ -20,44 +51,101 @@
                 <th>&nbsp;</th>
               </tr>
             </thead>
-            <tbody *ngFor="let deliveryvalidation of deliveryvalidations; let i = index" class="table-border-bottom-0" style="box-shadow: 0 0 0 1px #e9ecef;">
-              <tr style="border-top: hidden;">
-                  <td style="max-width: 150px;">{{deliveryvalidation.career_Area}}</td>
-                  <td>{{deliveryvalidation.userName}}</td>
-                  <td style="max-width: 300px;">{{deliveryvalidation.validation_Description}}</td>
-                  <td style="max-width: 148px;">
-                    <a href="#" id="table-link">
-                      <div class="row">
-                        <div class="col-md-1"><i class="fa fa-download" aria-hidden="true"> </i> &nbsp; </div>
-                        <div class="col-md-8"><u>{{deliveryvalidation.sample_File}} </u></div>
+            <tbody
+              *ngFor="
+                let deliveryvalidation of deliveryvalidations;
+                let i = index
+              "
+              class="table-border-bottom-0"
+              style="box-shadow: 0 0 0 1px #e9ecef"
+            >
+              <tr style="border-top: hidden">
+                <td style="max-width: 150px">
+                  {{ deliveryvalidation.career_Area }}
+                </td>
+                <td>{{ deliveryvalidation.userName }}</td>
+                <td style="max-width: 300px">
+                  {{ deliveryvalidation.validation_Description }}
+                </td>
+                <td style="max-width: 148px">
+                  <a href="#" id="table-link">
+                    <div class="row">
+                      <div class="col-md-1">
+                        <i class="fa fa-download" aria-hidden="true"> </i>
+                        &nbsp;
                       </div>
-                    </a>
-                  </td>
-                  <td><div style="color: red;background-color: #ffcccb;padding: 2px;border-radius: 5px;">{{deliveryvalidation.status}}</div></td>
-                  <td><a href="#"><i class="fa fa-upload" aria-hidden="true"> </i> &nbsp; <u>{{deliveryvalidation.evidence_File}}</u></a> </td>
-                  <td><a href="#"><i class="fa fa-upload" aria-hidden="true"> </i> &nbsp; <u>{{deliveryvalidation.evidence_Video}}</u></a> </td>
-                  <td [ngClass]="toggle[i] ? 'table-dropdown-down': 'table-dropdown'">
-                    <div (click)="toggle[i] = !toggle[i];showhidden(i);">
-                      <i class="fa fa-2x" [ngClass]="toggle[i] ? 'fa-chevron-circle-right': 'fa-chevron-circle-down'" aria-hidden="true"></i>
+                      <div class="col-md-8">
+                        <u>{{ deliveryvalidation.sample_File }} </u>
+                      </div>
                     </div>
-                  </td>
+                  </a>
+                </td>
+                <td>
+                  <div
+                    style="
+                      color: red;
+                      background-color: #ffcccb;
+                      padding: 2px;
+                      border-radius: 5px;
+                    "
+                  >
+                    {{ deliveryvalidation.status }}
+                  </div>
+                </td>
+                <td>
+                  <a href="#"
+                    ><i class="fa fa-upload" aria-hidden="true"> </i> &nbsp;
+                    <u>{{ deliveryvalidation.evidence_File }}</u></a
+                  >
+                </td>
+                <td>
+                  <a href="#"
+                    ><i class="fa fa-upload" aria-hidden="true"> </i> &nbsp;
+                    <u>{{ deliveryvalidation.evidence_Video }}</u></a
+                  >
+                </td>
+                <td
+                  [ngClass]="
+                    toggle[i] ? 'table-dropdown-down' : 'table-dropdown'
+                  "
+                >
+                  <div (click)="toggle[i] = !toggle[i]; showhidden(i)">
+                    <i
+                      class="fa fa-2x"
+                      [ngClass]="
+                        toggle[i]
+                          ? 'fa-chevron-circle-right'
+                          : 'fa-chevron-circle-down'
+                      "
+                      aria-hidden="true"
+                    ></i>
+                  </div>
+                </td>
               </tr>
-              <tr style="border-top: hidden;" *ngIf="deliveryvalidation.state">
-                <td colspan="8" style="padding: 0;">
+              <tr style="border-top: hidden" *ngIf="deliveryvalidation.state">
+                <td colspan="8" style="padding: 0">
                   <div class="scrolldiv">
                     <h4>Project Task Breakdown</h4>
                     <div *ngFor="let question of deliveryvalidation.questions">
-                      <div class="form-check" style="padding:2px 2px 2px 40px;">
-                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                        <label class="form-check-label" for="defaultCheck1" style="padding-top: 4px;">
-                          {{question.check}}
+                      <div class="form-check" style="padding: 2px 2px 2px 40px">
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          value=""
+                          id="defaultCheck1"
+                        />
+                        <label
+                          class="form-check-label"
+                          for="defaultCheck1"
+                          style="padding-top: 4px"
+                        >
+                          {{ question.check }}
                         </label>
                       </div>
                     </div>
                   </div>
                 </td>
               </tr>
-
             </tbody>
           </table>
 
@@ -132,4 +220,3 @@
     </mat-tab>
   </mat-tab-group>
 </div>
-
